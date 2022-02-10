@@ -1,0 +1,80 @@
+// Imprted files
+
+@use "../Styles/GMVL.scss" as *;
+
+/* Styling */
+body {
+  height: 100vh;
+  color: $text;
+  font-weight: 300;
+}
+.white-text {
+  color: white;
+  font-weight: 400;
+  transition-duration: .5s;
+  &:hover {
+    color: $code;
+  }
+}
+.parent {
+  @include position-centering;
+  width: 350px;
+  background-color: $main-bg;
+  padding: 4em 1.5em;
+  @include min-mq(1440px) {
+    width: 1440px;
+    @include flex-centering;
+  }
+.card {
+    padding: 1.5em {
+      bottom: 0;
+    };
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: $card-bg;
+    .img-cont {
+      border-radius: 10px;
+      overflow: hidden;
+      background-image: url(../images/image-equilibrium.jpg)  , url(../images/icon-view.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 , 50%;
+      height: 15em;
+      transition-duration: .5s;
+      &:hover {
+        background-color: #00fff76e;
+        background-image: url(../images/image-equilibrium.jpg) , url(../images/icon-view.svg);
+        background-size: cover , 40px;
+        background-position: 0 0 , 50%;
+        background-blend-mode: lighten;
+      }
+    }
+    .details-cont {
+      font-size: 18px;
+      @include flex-column-gap(1em);
+      padding: 1.5em 0;
+      .details {
+        @include flex-row-gap(null,space-between);
+        .column {
+          display: flex;
+          gap: .5em;
+          align-items: center;
+          &:first-child {
+            color: $code;
+          }
+        }
+      }
+      .creator {
+        @include flex-row-gap(null,space-between);
+        align-items: center;
+        border-top: 1px solid $line;
+        padding-top: 1em;
+        img {
+          width: 40px;
+          border: 1px solid white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

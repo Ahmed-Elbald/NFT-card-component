@@ -1,0 +1,111 @@
+/* Global */
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Outfit", sans-serif;
+}
+
+i,
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* Styling */
+body {
+  height: 100vh;
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.white-text {
+  color: white;
+  font-weight: 400;
+  transition-duration: 0.5s;
+}
+.white-text:hover {
+  color: #00fff7;
+}
+
+.parent {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: 350px;
+  background-color: #0d192b;
+  padding: 4em 1.5em;
+}
+@media (min-width: 1440px) {
+  .parent {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.parent .card {
+  padding: 1.5em;
+  padding-bottom: 0;
+  max-width: 300px;
+  border-radius: 10px;
+  background-color: #14253d;
+}
+.parent .card .img-cont {
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url(../images/image-equilibrium.jpg), url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0, 50%;
+  height: 15em;
+  transition-duration: 0.5s;
+}
+.parent .card .img-cont:hover {
+  background-color: #00fff76e;
+  background-image: url(../images/image-equilibrium.jpg), url(../images/icon-view.svg);
+  background-size: cover, 40px;
+  background-position: 0 0, 50%;
+  background-blend-mode: lighten;
+}
+.parent .card .details-cont {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 0;
+}
+.parent .card .details-cont .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.parent .card .details-cont .details .column {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.parent .card .details-cont .details .column:first-child {
+  color: #00fff7;
+}
+.parent .card .details-cont .creator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #2f415b;
+  padding-top: 1em;
+}
+.parent .card .details-cont .creator img {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
