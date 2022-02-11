@@ -20,7 +20,7 @@ body {
   @include position-centering;
   width: 350px;
   background-color: $main-bg;
-  padding: 4em 1.5em;
+  padding: 3em 1.5em;
   @include min-mq(1440px) {
     width: 1440px;
     @include flex-centering;
@@ -53,6 +53,9 @@ body {
       font-size: 18px;
       @include flex-column-gap(1em);
       padding: 1.5em 0;
+      h1 {
+        font-size: 1.5rem
+      }
       .details {
         @include flex-row-gap(null,space-between);
         .column {

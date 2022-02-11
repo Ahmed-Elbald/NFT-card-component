@@ -40,7 +40,7 @@ body {
   transform: translate(50%, 50%);
   width: 350px;
   background-color: #0d192b;
-  padding: 4em 1.5em;
+  padding: 3em 1.5em;
 }
 @media (min-width: 1440px) {
   .parent {
@@ -80,6 +80,9 @@ body {
   flex-direction: column;
   gap: 1em;
   padding: 1.5em 0;
+}
+.parent .card .details-cont h1 {
+  font-size: 1.5rem;
 }
 .parent .card .details-cont .details {
   display: flex;
